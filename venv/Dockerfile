@@ -10,7 +10,7 @@ COPY requirements.txt .
 
 #install any needed packages specified in requirements.txt 
 
-RUN pip install --no-cashe-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 #Copy the rest of the application code to the working directory 
 
