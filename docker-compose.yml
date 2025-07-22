@@ -2,12 +2,12 @@ version: '3.8'
 
 services:
   backend:
-    build: ./backend
+    build: ./Backend
     container_name: todo-backend
     ports:
       - "5001:5001"
     volumes:
-      - ./backend:/app
+      - ./Backend:/app
     environment:
       - MARIADB_USER=user
       - MARIADB_PASSWORD=password
