@@ -8,6 +8,8 @@ __pycache__/
 
 #ignore the following files and directories
 .venv/
+
+# Environment variables
 .env/
 
 # Distribution / packaging
