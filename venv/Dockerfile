@@ -22,8 +22,8 @@ EXPOSE 5001
 
 #define environment variable 
 
-ENV FLASK_APP = app.py
+ENV FLASK_APP app.py
 
 #RUN app.py when the container launches
 
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5001"]
+CMD ["python", "app.py"]
