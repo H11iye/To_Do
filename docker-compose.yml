@@ -30,6 +30,11 @@ services:
       - mariadb_data:/var/lib/mysql
     networks:
       - todo-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "user", "-prootpassword"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
 networks:
   todo-network:

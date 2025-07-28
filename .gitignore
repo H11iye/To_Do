@@ -9,6 +9,9 @@ __pycache__/
 #ignore the following files and directories
 .venv/
 
+#ignore bash files
+*.sh
+
 # Environment variables
 .env/
 
